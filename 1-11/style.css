@@ -1,0 +1,73 @@
+* {
+    transition: all 1s;
+}
+
+body { 
+    /* background:#ffb67f; */
+    margin: 0;
+    height: 2000px;
+    animation: changeColor 10s forwards;
+}
+
+
+/*Multiple css selectors with a comma*/
+p, b, i {
+    color:purple;
+    font-size: 24px;
+}
+
+/*Target child css with a space*/
+section i {
+    text-decoration: underline;
+}
+
+/*Classes are with dots and for multiple things*/
+.prettyClass {
+    color: hotpink;
+}
+
+/*Ideas are to target one element*/
+#unique{ 
+    background:blue;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+h1{
+    color:red;
+        
+}
+
+/**Psuedo class*/
+#unique:hover{
+    color:blue;
+    font-size: 54px;
+    transform: rotate(900deg)
+}
+
+
+/**Add class*/
+/* .big{
+    color:blue;
+    font-size: 54px;
+} */
+
+
+
+
+@keyframes changeColor {
+    0% {
+        background: blue;
+        padding: 0;
+    }
+    50% {
+        background: indianred;
+        padding: 50px;
+    }
+    100% {
+        background: greenyellow;
+        padding: 0px;
+    }
+}
