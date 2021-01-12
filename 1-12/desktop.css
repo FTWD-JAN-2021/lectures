@@ -6,5 +6,19 @@ main{
   h1{ 
       background: white;
       color: black;
-      padding: 100px;
+      padding: 50px;
+      flex:1;
+
+  }
+
+  .mid {
+    flex:6;
+  }
+
+  .left {
+      flex:3;
+  }
+
+  .right {
+      flex:1
   }
