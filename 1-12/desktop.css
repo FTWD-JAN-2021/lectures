@@ -1,0 +1,10 @@
+main{
+    background-color: blue;
+    flex-direction: row;
+  }
+
+  h1{ 
+      background: white;
+      color: black;
+      padding: 100px;
+  }

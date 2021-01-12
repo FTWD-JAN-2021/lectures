@@ -1,0 +1,52 @@
+*{
+    transition: all 2s;
+}
+
+body{ 
+    background: teal;
+    height: 2000px;
+    padding-top: 200px;
+}
+
+main { 
+
+    top: 0;
+    background-color: yellow;
+    position: sticky;
+
+    display: flex;
+    
+    /*left and right*/
+    justify-content: space-evenly;
+    
+    /*up and down*/
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+h1 { 
+    font-size: 16px;
+    padding: 70px;
+    color: white;
+    background: purple;
+    border: 1px solid red;
+}
+
+
+/*AT 800px or greater than do what's inside*/
+/* @media  (min-width: 800px) {
+    
+    main{
+      background-color: blue;
+      flex-direction: row;
+    }
+
+    h1{ 
+        background: white;
+        color: black;
+    }
+
+
+  } */
