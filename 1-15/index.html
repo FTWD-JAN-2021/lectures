@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        height: 2000px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    button {
+        width: 25%;
+        padding: 20px;
+    }
+
+    .active {
+        background: darkorange;
+    }
+
+    span,
+    img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        font-size: 24px;
+        color: blue;
+    }
+
+    span {
+        z-index: 1;
+    }
+
+    table {
+        position: fixed;
+
+        right: 0;
+    }
+
+
+
+    input {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+</style>
+
+<body>
+
+    <h1>Welcome to Dom Manipulation <span>0</span></h1>
+
+    <input type="text" placeholder="search...." />
+    <nav>
+        <button id="one"> 1
+            <div class="test">One</div>
+        </button>
+
+        <button id="two"> 2
+            <div class="test">Two</div>
+        </button>
+
+        <button id="three"> 3
+            <div class="test">Three</div>
+        </button>
+
+        <button id="four"> 4
+            <div class="test">Four</div>
+        </button>
+    </nav>
+    <p>Add text here...</p>
+
+
+
+    <img src="https://www.placecage.com/c/200/300" />
+
+
+
+</body>
+
+
+<script>
+
+
+
+    //I get all the buttons 
+    let buttons = document.querySelectorAll('button')
+
+    //I loop through them
+    for (let i = 0; i < buttons.length; i++) {
+
+        //I add an onclick event to each button
+        buttons[i].onclick = function (event) {
+
+            this.querySelector('.test').remove()
+            //console.log('event: ',event)
+            // console.log('this: ', this)
+            for (let i = 0; i < 50; i++) {
+                document.querySelector('p').innerHTML += ` button ${event.target.innerText}`
+            }
+
+            if (document.querySelector('.active')) {
+                document.querySelector('.active').classList.remove('active')
+            }
+
+
+            this.classList.add('active')
+            //this.remove()
+        }
+    }
+
+
+
+
+
+
+    window.onscroll = function (event) {
+        //console.log(event, this, this.scrollY)
+        console.log('we are scrolling', this.scrollY)
+        document.querySelector('span').innerText = this.scrollY;
+        document.querySelector('img').style.zoom = this.scrollY / 1000
+
+    }
+
+    document.querySelector('input').oninput = function (event) {
+        console.log(document.querySelector('input').value)
+        console.log(this.value)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // document.querySelector('#one').onclick = function () {
+    //     for (let i = 0; i < 5; i++) {
+    //         document.querySelector('p').innerHTML += ' button1'
+    //     }
+    // }
+
+
+    // document.querySelector('#two').onclick = function () {
+    //     for (let i = 0; i < 5; i++) {
+    //         document.querySelector('p').innerHTML += ' button2'
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>
