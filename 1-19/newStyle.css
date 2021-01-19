@@ -1,0 +1,32 @@
+h2 { 
+    color: pink;
+}
+
+section h2{ 
+    color: red;
+}
+
+#specialSection h2{
+ color:purple;
+}
+
+
+.classSection h2{
+    color:green;
+}
+
+body {
+    background-color: peachpuff;
+    text-align: center;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: grey;
+    padding: 40px;
+
+}

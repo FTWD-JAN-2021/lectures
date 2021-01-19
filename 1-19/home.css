@@ -1,0 +1,54 @@
+body{ 
+    margin:0;
+    
+}
+
+main {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header { 
+    background: rgb(209, 13, 13);
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+footer {
+    background-color: plum;
+    width: 100vw;
+    height: 50px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ul, li{ 
+    margin: 0;
+    padding:10px;
+   
+}
+nav ul{
+    display:flex;
+    width: 100vw;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+nav li{
+    border: 1px solid black;
+    width:33%;
+    text-align: center;
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color:white
+}
+
