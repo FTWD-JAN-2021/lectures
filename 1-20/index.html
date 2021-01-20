@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img
+            src="data:image/jpeg;base64,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" />
+        <h1>Welcome to my Ok Site.</h1>
+    </div>
+    <header class="header">
+        <a href="" class="logo">CSS Nav</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#case-study">Case Study</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+
+
+        <section id="container">
+
+            <div class="card pic1"></div>
+            <div class="card pic2"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm baby hella 90's wayfarers farm-to-table af readymade lomo blue bottle. Umami cardigan glossier
+                gentrify, pour-over 8-bit +1 vegan irony. Chillwave literally lyft vape polaroid. Ugh bespoke yuccie air
+                plant fingerstache tattooed jean shorts glossier.
+            </p>
+
+            <p>Woke gentrify vexillologist blue bottle. Skateboard hammock biodiesel heirloom affogato green juice,
+                seitan
+                cardigan polaroid. Vice lumbersexual XOXO vegan viral crucifix celiac kombucha meggings kale chips
+                flexitarian raw denim wayfarers. Pitchfork offal readymade, post-ironic lo-fi neutra blog squid.
+                Authentic
+                fixie offal man bun franzen live-edge pork belly artisan.</p>
+
+            <p>
+                Artisan banh mi fanny pack stumptown. Synth franzen microdosing, af gentrify tumeric poutine
+                asymmetrical kombucha subway tile PBR&B iceland paleo. Flexitarian hoodie plaid artisan tote bag
+                vape tofu thundercats wolf iPhone. Ennui wayfarers intelligentsia vaporware cardigan heirloom.</p>
+            </p>
+
+
+            <p>I'm baby hella 90's wayfarers farm-to-table af readymade lomo blue bottle. Umami cardigan glossier
+                gentrify, pour-over 8-bit +1 vegan irony. Chillwave literally lyft vape polaroid. Ugh bespoke yuccie air
+                plant fingerstache tattooed jean shorts glossier.
+            </p>
+
+            <p>Woke gentrify vexillologist blue bottle. Skateboard hammock biodiesel heirloom affogato green juice,
+                seitan
+                cardigan polaroid. Vice lumbersexual XOXO vegan viral crucifix celiac kombucha meggings kale chips
+                flexitarian raw denim wayfarers. Pitchfork offal readymade, post-ironic lo-fi neutra blog squid.
+                Authentic
+                fixie offal man bun franzen live-edge pork belly artisan.</p>
+
+            <p>
+                Artisan banh mi fanny pack stumptown. Synth franzen microdosing, af gentrify tumeric poutine
+                asymmetrical kombucha subway tile PBR&B iceland paleo. Flexitarian hoodie plaid artisan tote bag
+                vape tofu thundercats wolf iPhone. Ennui wayfarers intelligentsia vaporware cardigan heirloom.</p>
+            </p>
+
+
+
+            <p>I'm baby hella 90's wayfarers farm-to-table af readymade lomo blue bottle. Umami cardigan glossier
+                gentrify, pour-over 8-bit +1 vegan irony. Chillwave literally lyft vape polaroid. Ugh bespoke yuccie air
+                plant fingerstache tattooed jean shorts glossier.
+            </p>
+
+            <p>Woke gentrify vexillologist blue bottle. Skateboard hammock biodiesel heirloom affogato green juice,
+                seitan
+                cardigan polaroid. Vice lumbersexual XOXO vegan viral crucifix celiac kombucha meggings kale chips
+                flexitarian raw denim wayfarers. Pitchfork offal readymade, post-ironic lo-fi neutra blog squid.
+                Authentic
+                fixie offal man bun franzen live-edge pork belly artisan.</p>
+
+            <p>
+                Artisan banh mi fanny pack stumptown. Synth franzen microdosing, af gentrify tumeric poutine
+                asymmetrical kombucha subway tile PBR&B iceland paleo. Flexitarian hoodie plaid artisan tote bag
+                vape tofu thundercats wolf iPhone. Ennui wayfarers intelligentsia vaporware cardigan heirloom.</p>
+            </p>
+
+
+            <p>I'm baby hella 90's wayfarers farm-to-table af readymade lomo blue bottle. Umami cardigan glossier
+                gentrify, pour-over 8-bit +1 vegan irony. Chillwave literally lyft vape polaroid. Ugh bespoke yuccie air
+                plant fingerstache tattooed jean shorts glossier.
+            </p>
+
+            <p>Woke gentrify vexillologist blue bottle. Skateboard hammock biodiesel heirloom affogato green juice,
+                seitan
+                cardigan polaroid. Vice lumbersexual XOXO vegan viral crucifix celiac kombucha meggings kale chips
+                flexitarian raw denim wayfarers. Pitchfork offal readymade, post-ironic lo-fi neutra blog squid.
+                Authentic
+                fixie offal man bun franzen live-edge pork belly artisan.</p>
+
+            <p>
+                Artisan banh mi fanny pack stumptown. Synth franzen microdosing, af gentrify tumeric poutine
+                asymmetrical kombucha subway tile PBR&B iceland paleo. Flexitarian hoodie plaid artisan tote bag
+                vape tofu thundercats wolf iPhone. Ennui wayfarers intelligentsia vaporware cardigan heirloom.</p>
+            </p>
+        </section>
+
+        <section id="case-study">
+            <h2>Case Study</h2>
+            <div class="content">
+                <div>Lorem Ipsum</div>
+                <div>This is the details of the blah blah.</div>
+                <div>Some other TextSome other TextSome other Text</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="hipsterDog.jpg" />
+
+    </footer>
+
+
+</body>
+
+</html>
