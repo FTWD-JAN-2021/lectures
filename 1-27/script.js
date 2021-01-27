@@ -12,11 +12,11 @@ img.onload = function () {
 }
 
 
-let chicken = {``
-x: 100,
+let chicken = {
+    x: 100,
     y: 100,
-        w: 120,
-            h: 150
+    w: 120,
+    h: 150
 }
 
 
