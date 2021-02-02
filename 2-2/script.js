@@ -53,35 +53,44 @@ class Dog {
             this.draw(img)
         }
         console.log(img)
-
     }
     draw(img) {
-
+        ctx.save()
         if (frame % 10 === 0) {
-
             if (this.sx < this.img.width - this.sx) {
                 this.sx += this.sw
             } else {
                 this.sx = 0;
             }
-
         }
-        //
 
 
         ctx.drawImage(this.img, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w, this.h)
-        //ctx.restore();
-        //
-
+        ctx.restore()
     }
     flip() {
-
-        //this.direction = this.direction * -1
-        // ctx.save()
-        this.w = this.w * -1
+        ctx.save()
+        ctx.translate(canvas.width, 0);
         ctx.scale(-1, 1)
-        // ctx.restore()
+
+        if (frame % 10 === 0) {
+            if (this.sx < this.img.width - this.sx) {
+                this.sx += this.sw
+            } else {
+                this.sx = 0;
+            }
+        }
+
+
+        ctx.drawImage(this.img, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w, this.h)
+        ctx.restore()
+
     }
+    //this.w = this.w * -1
+    // this.direction = this.direction * -1
+    // console.log(this.w, this.direction)
+    // ctx.scale(this.direction, 1)
+    // ctx.restore()
 
     dead() {
         this.numberWide = 10
@@ -90,7 +99,6 @@ class Dog {
     }
     fall() {
         this.numberWide = 8
-
         this.sy = this.sh
     }
     hurt() {
@@ -159,7 +167,7 @@ function animate() {
     }
 
     fido.draw()
-    sparky.draw()
+    sparky.flip()
     drawCoin(startX)
 
     frame++;
