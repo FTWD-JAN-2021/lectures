@@ -1,0 +1,13 @@
+
+
+nav { 
+  display: flex;
+  background-color: #000;
+  padding: 20px;
+
+  justify-content: space-evenly;
+}
+nav a {
+  color: white;
+}
+
