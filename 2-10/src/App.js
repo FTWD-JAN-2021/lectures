@@ -4,7 +4,6 @@ import Logo from './Logo';
 
 
 function App() {
-
   const [logo, setLogo] = useState(false)
   const [text, setText] = useState('Great Job')
 

@@ -4,6 +4,7 @@ import Home from './Home'
 import About from './About'
 import Contact from './Contact'
 import Profile from './Profile'
+import ForExample from './ForExample'
 
 import { Switch, Route, Link } from 'react-router-dom'
 
@@ -26,6 +27,8 @@ function App() {
         <Link to="/contact">Contact</Link>
         <Link to="/about">About</Link>
 
+        <Link to="/for-example">Example</Link>
+
         {makeList()}
         {/* <a href="/about">Traditional About</a> */}
       </nav>
@@ -34,6 +37,7 @@ function App() {
         <Route exact path="/" render={(props) => <Home {...props} />} />
         <Route exact path="/about" render={(props) => <About {...props} />} />
         <Route exact path="/contact" render={(props) => <Contact {...props} />} />
+        <Route exact path="/for-example" render={(props) => <ForExample {...props} />} />
         <Route exact path="/profile/:id" render={(props) => <Profile {...props} />} />
       </Switch>
     </div>
